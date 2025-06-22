@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recycle Rewards Simulation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>♻️ Recycle Rewards Simulation</h1>
+  </header>
+
+  <main>
+    <section id="user-section">
+      <label for="username">Enter your name:</label>
+      <input type="text" id="username" placeholder="e.g. Alex" />
+      <button id="start-btn">Start Simulation</button>
+    </section>
+
+    <section id="sim-section" style="display:none;">
+      <h2>Welcome, <span id="display-username"></span>!</h2>
+      <p>How many items do you want to recycle today?</p>
+      <input type="number" id="recycle-count" min="1" value="1" />
+      <button id="recycle-btn">Recycle</button>
+
+      <div id="results" style="margin-top:1em;"></div>
+      <div id="total-points">Total Points: 0</div>
+      <button id="reset-btn">Reset Simulation</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made for GitHub Pages - No npm or packages needed.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
